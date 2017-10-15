@@ -30,7 +30,7 @@ public class Customer {
       Rental each = rentalEnumeration.nextElement();
 
       // 根據 movie.price 來區別片子
-      switch (each.getMovie().getPrice()) {
+      switch (each.getMovie().getPriceCode()) {
         case Movie.REGULAR:
           thisAmount += 2;
           if (each.getDaysRented() > 2)
@@ -47,7 +47,7 @@ public class Customer {
       }
 
       frequentRenterPoints++;
-      if ((each.getMovie().getPrice() == Movie.NEW_RELEASE) && each.getDaysRented() > 1) {
+      if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1) {
         frequentRenterPoints++;
       }
 

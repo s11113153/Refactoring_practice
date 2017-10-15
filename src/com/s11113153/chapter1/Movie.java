@@ -6,11 +6,11 @@ public class Movie {
   public static final int CHILDRENS = 2;
 
   private String title;
-  private int price;
+  private int priceCode;
 
-  public Movie(String title, int price) {
+  public Movie(String title, int priceCode) {
     this.title = title;
-    this.price = price;
+    this.priceCode = priceCode;
   }
 
   public String getTitle() {
@@ -21,11 +21,11 @@ public class Movie {
     this.title = title;
   }
 
-  public int getPrice() {
-    return price;
+  public int getPriceCode() {
+    return priceCode;
   }
 
-  public void setPrice(int price) {
-    this.price = price;
+  public void setPriceCode(int priceCode) {
+    this.priceCode = priceCode;
   }
 }
